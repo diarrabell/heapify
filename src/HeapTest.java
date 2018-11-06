@@ -5,11 +5,19 @@ public class HeapTest {
         int[] arr2 = {15, 99, 3, 77, 27, 45, 7, 88, 26, 5};
         int[] heapArr,sortArr;
 
-        heapArr = heap.heapify(arr);
-        heap.printHeap(heapArr);
+//        heapArr = heap.heapify(arr);
+        heap.printHeap(arr);
 
-        sortArr = heap.heapsort(arr2);
-        heap.printHeap(arr2);
+//        sortArr = heap.heapsort(arr2);
+//        heap.printHeap(arr2);
+
+        String s= "";
+
+        for (int i=0; i<arr.length; i++) {
+            s = s + arr[i] + " ";
+        }
+
+        System.out.print(s);
 
 
     }
