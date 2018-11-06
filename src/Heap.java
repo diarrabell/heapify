@@ -1,4 +1,5 @@
 public class Heap{
+<<<<<<< HEAD
     /*
     takes an array of integers as input and converts it to a max heap
      */
@@ -23,4 +24,6 @@ public class Heap{
 
         return s;
     }
+=======
+>>>>>>> 5ad0d391ea28c91d1857df121236b91624706514
 }
