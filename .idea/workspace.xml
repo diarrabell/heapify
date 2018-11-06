@@ -94,9 +94,14 @@
     <detection-done>true</detection-done>
     <sorting>DEFINITION_ORDER</sorting>
   </component>
+<<<<<<< HEAD
   <component name="ProjectFrameBounds" extendedState="7">
     <option name="x" value="-18" />
     <option name="y" value="-18" />
+=======
+  <component name="ProjectFrameBounds" extendedState="6">
+    <option name="x" value="-15" />
+>>>>>>> 680f64bf7be85d39dab8e90fe1b23dc6b0d7d524
     <option name="width" value="1950" />
     <option name="height" value="2055" />
   </component>
@@ -113,7 +118,11 @@
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
+<<<<<<< HEAD
     <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1541467652633" />
+=======
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1541467641703" />
+>>>>>>> 680f64bf7be85d39dab8e90fe1b23dc6b0d7d524
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
