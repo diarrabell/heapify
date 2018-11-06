@@ -95,6 +95,12 @@
     <sorting>DEFINITION_ORDER</sorting>
   </component>
 <<<<<<< HEAD
+  <component name="ProjectFrameBounds">
+    <option name="y" value="22" />
+    <option name="width" value="1193" />
+    <option name="height" value="1028" />
+=======
+<<<<<<< HEAD
   <component name="ProjectFrameBounds" extendedState="7">
     <option name="x" value="-18" />
     <option name="y" value="-18" />
@@ -104,6 +110,7 @@
 >>>>>>> 680f64bf7be85d39dab8e90fe1b23dc6b0d7d524
     <option name="width" value="1950" />
     <option name="height" value="2055" />
+>>>>>>> d3f4dec7fb670091a87eba60697f79378bd5aca7
   </component>
   <component name="ProjectView">
     <navigator proportions="" version="1">
@@ -119,10 +126,17 @@
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
 <<<<<<< HEAD
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1541467780057" />
+    <property name="project.structure.last.edited" value="Project" />
+    <property name="project.structure.proportion" value="0.0" />
+    <property name="project.structure.side.proportion" value="0.0" />
+=======
+<<<<<<< HEAD
     <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1541467652633" />
 =======
     <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1541467641703" />
 >>>>>>> 680f64bf7be85d39dab8e90fe1b23dc6b0d7d524
+>>>>>>> d3f4dec7fb670091a87eba60697f79378bd5aca7
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
