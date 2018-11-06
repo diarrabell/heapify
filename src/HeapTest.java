@@ -18,7 +18,6 @@ public class HeapTest {
         }
 
         System.out.print(s);
-
-
+        
     }
 }
