@@ -3,10 +3,4 @@ public class RadixSort {
     public static void maxValue(int[] array, int num){}
 
     //TODO: function to sort array using radix sort
-<<<<<<< HEAD
-    
-=======
->>>>>>> ce90bdebe020b757d5797e7719509fd9c62fd134
-
-
 }
