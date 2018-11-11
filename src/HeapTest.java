@@ -15,13 +15,5 @@ public class HeapTest {
         temporary testing
         */
 
-<<<<<<< HEAD
-        System.out.print(s);
-
-=======
-        System.out.println(heap.printHeap(arr));
-        heap.heapify(arr);
-        System.out.println(heap.printHeap(arr));
->>>>>>> 053cad241a69cf8d09268ab136d027c36bc00158
     }
 }
