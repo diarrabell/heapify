@@ -2,6 +2,11 @@ Diarra Bell & Anya Greenberg
 CSC 172
 Lab 6
 
+In this lab we implemented functions that perform heap sort and radix sort.
+Heap.java, HeapTest.java, and RadixSort.java function as according to lab instructions.
+
+radix.java is Radix Sort implementation provided by professor.
+StdOut.java, Std.Random.java, and Stopwatch.java are provided by the professor.
 
 Radix Sort test cases:
 
