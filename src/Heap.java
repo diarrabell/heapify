@@ -1,18 +1,13 @@
 public class Heap{
-    int parent, lChild, rChild;
     /*
     takes an array of integers as input and converts it to a max heap
      */
     public int[] heapify(int[] arr) {
-        getBottomRight(arr);
-        compare(arr);
         return arr;
     }
 
     /*
-    compares parent to its children
      */
-    public void compare(int[] arr) {
         if(rChild != -1) {
             if (arr[parent]<arr[lChild] || arr[parent]<arr[rChild]) {
                 if (arr[lChild] > arr[rChild]) {
@@ -21,29 +16,19 @@ public class Heap{
                     swap(arr, rChild, parent);
                 }
             }
-        } else {
+        } else if (lChild !=-1){
             if (arr[parent]<arr[lChild]) {
                 swap(arr,parent,lChild);
             }
         }
-
     }
 
-    public int getBottomRight (int[] arr){
-        int i=0;
 
-        while (lChild<arr.length && rChild<arr.length) {
-            parent = i; //(i - 1) / 2;
-            lChild = 2 * i + 1;
-            rChild = 2 * i + 2;
-//            System.out.println(arr.length);
-//            System.out.println(i + ":" + parent + "-" + lChild + "-" + rChild);
             i++;
         }
 
         if(rChild>=arr.length) {
             rChild = -1;
-//            System.out.println(i + ":" + parent + "-" + lChild + "-" + rChild);
         }
 
         if(rChild>lChild && rChild<arr.length){
@@ -58,9 +43,6 @@ public class Heap{
         return -1;
     }
 
-
-
-
     /*
     swaps indexes of a and b
      */
@@ -74,7 +56,6 @@ public class Heap{
     takes an integer array and sorts it  (ascending order)
      */
     public int[] heapsort(int[] arr) {
-        return arr;
     }
 
     /*
