@@ -1,4 +1,6 @@
 Diarra Bell & Anya Greenberg
+CSC 172
+Lab 6
 
 
 Radix Sort test cases:
@@ -18,3 +20,8 @@ old implementation: 0.0s
 Case 4: [250, 700, 298, 467, 389, 798, 198, 298, 478, 299]
 new implementation: 1.0s
 old implementation: 0.0s
+
+Case 5: randomly generated array
+new implementation: 8.0s
+old implementation: 8.0s
+
