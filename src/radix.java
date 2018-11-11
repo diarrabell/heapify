@@ -55,10 +55,13 @@ public class radix{
     for(int i=0;i<arr.length;i++){
       arr[i] = rand.nextInt(1000);
     }
-
     //sort array and print result
+      Stopwatch timer = new Stopwatch();
     Sort(arr);
     printArr(arr);
+      double time = timer.elapsedTimeMillis();
+      System.out.println("The total running time is: ");
+      System.out.print(time);
   }
 
 }

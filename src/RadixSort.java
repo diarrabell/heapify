@@ -1,61 +1,46 @@
+/*
+Diarra Bell & Anya Greenberg
+CSC 172
+Lab 6: Heapify & Radix Sort
+ */
+
 import java.util.Arrays;
-import java.util.LinkedList;
-import java.util.Queue;
+import java.util.Random;
 
 public class RadixSort {
-    //TODO: function to get max value in array
-    public static int maxValue(int[] array) {
-        int max = array[0];
-        for (int i = 1; i<array.length; i++){
-            if(array[i] > max){
-                max = array[i];
+    //TODO: function to sort array using radix sort(using bitshifting)
+    public static void radixSort(int [] array){
+        for (int i = Integer.SIZE-1; i > -1; i--){
+            int[] a2 = new int[array.length];
+            int numZeroes = 0;
+            for (int j = 0; j< array.length; j++){
+                boolean shift = array[j] << i >=0;
+                if((i == 0) != shift){
+                    a2[numZeroes] = array[j];
+                    numZeroes++;
+                }else{
+                    array[j - numZeroes] = array[j];
+                }
             }
+            for (int k = numZeroes; k < a2.length; k++){
+                a2[k] = array[k-numZeroes];
+            }
+            array = a2;
         }
-        return max;
+        System.out.println(Arrays.toString(array));
     }
-
-    //TODO: function to get number of bits required to store number
-    public static int numBits(int num){
-        int amt = 0;
-        while (num > 0){
-            amt += num & 1;
-            num >>=1;
-        }
-        return amt;
-    }
-
-    //TODO: function to sort array using radix sort
-    public static void radixSort(int[] array) {
-        Queue<Integer> q1 = new LinkedList<>();
-        Queue<Integer> q2 = new LinkedList<>();
-        int max = maxValue(array);
-        int bits = numBits(max);
-
-        for (int i = 0; i < bits; i++) {
-            int shift = 1 << i;
-            for (int j = 0; j < array.length; j++) {
-                if ((array[j] & shift) == 0) {
-                    q1.add(array[j]);
-                } else {
-                    q2.add(array[j]);
-                }
-            }
-                int index = 0;
-                while (!q1.isEmpty()) {
-                }
-                while (!q1.isEmpty()) {
-                    array[index++] = q2.poll();
-                }
-            }
-            System.out.println(Arrays.toString(array));
-        }
 
     public static void main(String [] args){
-        int [] array = new int[4];
-        array[0] = 222;
-        array[1] = 223;
-        array[2] = 221;
-        array[3] = 228;
+        //the following are randomly created test arrays:
+        int[] array = new int[100];
+        Random rand = new Random();
+        for(int i=0;i<array.length;i++){
+            array[i] = rand.nextInt(1000);
+        }
+        Stopwatch timer = new Stopwatch(); //Stopwatch.java and related code provided by professor
         radixSort(array);
+        double time = timer.elapsedTimeMillis();
+        System.out.println("The total running time is: ");
+        System.out.print(time);
     }
 }
