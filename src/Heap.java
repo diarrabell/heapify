@@ -27,7 +27,6 @@ public class Heap{
 
         return arr;
     }
-
     /*
     compares parent to its child
      */
