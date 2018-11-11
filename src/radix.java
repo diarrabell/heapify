@@ -1,13 +1,13 @@
+//code provided by professor
 import java.util.Random;
 
 public class radix{
 
-  static int THRESHOLD = 1;// ****Notice this is changed to 1 - this makes the code work
+  static int THRESHOLD = 1;//
 
   static int ARRAYSIZE = 0;
   static int[] POW2 = {1, 2, 4, 8, 16, 32, 64, 128, 256};
 
-  @SuppressWarnings("unchecked") // Generic array allocation
   static void Sort(Integer[] A) {
     assert THRESHOLD > 0 :
            "Usage: Sortmain [+/-] <size> <threshold>, " +
@@ -21,24 +21,17 @@ public class radix{
 
   static void radix(Integer[] A, Integer[] B,
                     int k, int r, int[] count) {
-    // Count[i] stores number of records in bin[i]
     int i, j, rtok;
 
-    for (i=0, rtok=1; i<k; i++, rtok*=r) { // For k digits
-      for (j=0; j<r; j++) count[j] = 0;    // Initialize count
-
-      // Count the number of records for each bin on this pass
+    for (i=0, rtok=1; i<k; i++, rtok*=r) {
+      for (j=0; j<r; j++) count[j] = 0;
       for (j=0; j<A.length; j++) count[(A[j]/rtok)%r]++;
-
-      // count[j] will be index in B for last slot of bin j.
       for (j=1; j<r; j++) count[j] = count[j-1] + count[j];
 
-      // Put records into bins, working from bottom of bin
-      // Since bins fill from bottom, j counts downwards
       for (j=A.length-1; j>=0; j--)
         B[--count[(A[j]/rtok)%r]] = A[j];
 
-      for (j=0; j<A.length; j++) A[j] = B[j]; // Copy B back
+      for (j=0; j<A.length; j++) A[j] = B[j];
     }
   }
 
@@ -55,7 +48,6 @@ public class radix{
     for(int i=0;i<arr.length;i++){
       arr[i] = rand.nextInt(1000);
     }
-    //sort array and print result
       Stopwatch timer = new Stopwatch();
     Sort(arr);
     printArr(arr);
